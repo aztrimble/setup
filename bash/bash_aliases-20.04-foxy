@@ -1,0 +1,15 @@
+# Alias for quickly sourcing various files
+## Fundamental Capabilities
+alias open='xdg-open'
+
+## ROS
+### Core software locations
+alias source-ros='source /opt/ros/noetic/setup.bash'
+alias source-ros2='source /opt/ros/foxy/setup.bash'
+
+### Custom workspaces
+alias source-me696noetic='source ~/ROS/ME696/devel/setup.bash'
+alias source-me696foxy='source ~/ros2/ME696/install/setup.bash'
+
+### Turtlebot3 Variables
+alias turtlebot3_variables='export TURTLEBOT3_MODEL=waffle; export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$(ros2 pkg prefix turtlebot3_gazebo)/share/turtlebot3_gazebo/models/'
