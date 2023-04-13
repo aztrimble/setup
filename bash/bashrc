@@ -1,0 +1,32 @@
+#############################
+###    CUSTOM SETTINGS    ###
+#############################
+
+# Customized terminal/bash settings
+## Adjust the path display
+export PROMPT_DIRTRIM=1
+
+#######
+# ROS #
+#######
+# Core software location
+## NOTE: These also have aliases for sourcing in the .bash_aliases file
+#source /opt/ros/noetic/setup.bash
+source /opt/ros/foxy/setup.bash
+
+## Automatically source a custom workspace
+### ME 696 course
+#### ROS Noetic
+#source ~/ROS/ME696/devel/setup.bash
+#### ROS Foxy
+# NOTE: Be careful with this since building in a sourced workspace is 
+#       potential dangerous
+#source ~/ros2/ME696/install/setup.bash
+#### Domain ID and local host (typically do not use)
+# export ROS_DOMAIN_ID=1
+# export ROS_LOCALHOST_ONLY=1
+
+## colcon_cd setup (https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html)
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+source /usr/share/colcon_cd/function/colcon_cd.sh
+export _colcon_cd_root=/opt/ros/foxy/
