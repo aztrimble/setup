@@ -10,7 +10,14 @@ Repository that contains directions and common setup or configuration files for 
 ## Stuff I do on a new Ubuntu Installation
 1. Install a version of vim with global clipboard support. For instance:
 ```
-sudo apt install vim-gtk3:
+sudo apt purge vim
+sudo apt install vim-gtk3
+sudo apt install neovim
+sudo apt install xclip
+```
+2. Install tmux
+```
+sudo apt install tmux
 ```
 2. Install and set up GIT:
 - Install
@@ -21,7 +28,7 @@ sudo apt install git
 ```
 git config --global user.name "Firstname Lastname"
 git config --global user.email "username@emailserver.com"
-git config --global core.editor vim
+git config --global core.editor nvim
 git config --global init.defaultBranch main
 ```
 3. Clone this repository. I recommend into a new directory named `GIT`:
