@@ -1,0 +1,6 @@
+[alias]
+  usercommit = -c user.name='First Last' -c user.email='useremail@hawaii.edu' commit
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
