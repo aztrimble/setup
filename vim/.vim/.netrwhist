@@ -1,3 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
-let g:netrw_dirhist_1='/home/atrimble/ros2/ME696/src/tutorials/turtlesim/src/turtlesim'

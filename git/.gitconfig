@@ -1,7 +1,0 @@
-[user]
-	name = A Trimble
-	email = atrimble@hawaii.edu
-[core]
-	editor = vim
-[init]
-	defaultBranch = main
