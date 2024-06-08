@@ -31,6 +31,10 @@ Repository that contains directions and common setup or configuration files for 
         git config --global core.editor vim
         git config --global init.defaultBranch main
         ```
+        TEMP: command quickly copy ssh key
+        ```
+        xclip -sel clip < ~/.ssh/id_ed***.pub
+        ```
 1. Clone this repository. I recommend into a new directory named `GIT`:
     ```
     mkdir ~/GIT
