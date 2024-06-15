@@ -1,0 +1,18 @@
+# Change behavior of cp and mv for safety
+alias cp='cp -vi'
+alias mv='mv -vi'
+
+# List command: ls
+alias lsd='ls -lh'
+alias lsa='ls -A'
+
+# Verbose copying with rsync
+alias cpv='rsync -avh --info=progress2'
+
+# Quick update
+alias qupdate="sudo -- bash -c 'apt update'; 'apt upgrade -y'; 'apt dist-upgrade -y'; 'apt autoremove -y'; 'apt autoclean -y'"
+
+# Find a sting in a file
+fstr() {
+  grep -Rnw "." -e "$1"
+}
