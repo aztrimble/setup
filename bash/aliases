@@ -10,7 +10,7 @@ alias lsa='ls -A'
 alias cpv='rsync -avh --info=progress2'
 
 # Quick update
-alias qupdate="sudo -- bash -c 'apt update'; 'apt upgrade -y'; 'apt dist-upgrade -y'; 'apt autoremove -y'; 'apt autoclean -y'"
+alias qupdate="sudo apt update -y && apt upgrade && apt dist-upgrade -y && apt autoremove -y && apt autoclean -y"
 
 # Find a sting in a file. NOTE: this command only works in bash not in zsh.
 fstr() {
