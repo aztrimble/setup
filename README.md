@@ -15,10 +15,14 @@ Repository that contains directions and common setup or configuration files for 
     sudo apt install neovim
     sudo apt install xclip
     ```
-1. Intsall tmux:
+1. Install tmux:
     ```
     sudo apt install tmux
     ```
+    Also install the [TMUX Plugin Manager (tpm)](https://github.com/tmux-plugins/tpm) for tmux
+   ```
+   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+   ```
 1. Install and set up GIT:
     - Install
         ```
