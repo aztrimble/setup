@@ -58,7 +58,7 @@
     require("lazy").setup(plugins, opts)
   -- Start and configure catppuccin
     require("catppuccin").setup()
-      vim.cmd.colorscheme "catppuccin-latte"
+      -- vim.cmd.colorscheme "catppuccin-latte"
   -- Start and configure telescope
     local builtin = require("telescope.builtin")
       vim.keymap.set('n', '<C-p>', builtin.find_files, {})
