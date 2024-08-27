@@ -26,6 +26,12 @@ Just a user interface to run a shell. Some options (as above, not a comprehensiv
 - Alacrity
     - Pros
         - Might be better visually, but not really experimented with or proven yet.
+- Kitty
+    - Pros
+        - Includes graphics. E.g. the terminal can show previews of images.
+        - Uses the graphics card - should unload the cpu for faster operation
+    - Cons
+        - Uses the graphics card - I'm not sure how it works if you don't have a graphics card. E.g. raspberry Pi?
 
 ## Customization packages
 There is so many options, this is much harder to categorize, so just some thoughts on a few that have come up.
@@ -40,6 +46,28 @@ There is so many options, this is much harder to categorize, so just some though
     - Universal across many systems.
 - oh-my-posh
     - Can be set up to emulate Powerlevel10k in bash.
+
+## Github dotfiles
+List of Github repositories that contain dotfiles worth copying or using.
+- ChrisTitusTech
+    - bash
+    - Starship
+    - setup.sh file
+- dreamsofcode-io 
+    - stow
+    - zsh
+    - powerlevel10k
+    - nvim
+    - tmux
+- daviwil
+    - stow
+- omerxx
+    - stow
+    - nix
+    - nvim
+    - Starship
+    - tmux
+    - zsh
 ## Programs/packages
 - Yazi
     - Terminal File Manager.
