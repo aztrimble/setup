@@ -3,11 +3,19 @@
 Repository that contains directions and common setup or configuration files for a new Ubuntu installation
 
 ## Directory Listing
-- [`bash`](/bash): customized settings for .bashrc and .bash_alias files
+- [`bash`](/bash): customized settings for .bashrc, .bash_alias, and .alias files
 - [`git`](/git): .gitconfig and other git configuration files 
 - [`tmux`](/tmux): .tmux.conf and .tmux directory with plugin files.
 - [`vim`](/vim): .vimrc and plugin files
 ## Stuff I do on a new Ubuntu Installation
+1. Install the default version of git from the default repositories
+    ```
+    sudo apt purge git && sudo apt install git
+    ```
+1. Clone this Repository
+    ```
+    git clone https://github.com/aztrimble/setup.git ~/
+    ```
 1. Install a version of vim with global clipboard support. For instance:
     ```
     sudo apt purge vim
