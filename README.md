@@ -14,7 +14,11 @@ Repository that contains directions and common setup or configuration files for 
     ```
 1. Clone this Repository
     ```
-    git clone https://github.com/aztrimble/setup.git ~/
+    git clone https://github.com/aztrimble/setup.git ~/SetupFiles
+    ```
+1. Run the setup script
+    ```
+    sudo sh ~/SetupFiles/setupscript_atrimble
     ```
 1. Install a version of vim with global clipboard support. For instance:
     ```
