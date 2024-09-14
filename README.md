@@ -14,7 +14,7 @@ Repository that contains directions and common setup or configuration files for 
     ```
 1. Install the default version of git from the default repositories
     ```
-    sudo apt purge git && sudo apt install git
+    sudo apt purge git && sudo apt install git -y
     ```
 1. Clone this Repository
     ```
