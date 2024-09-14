@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/sh
 
 # Script file to fully update the current system.
 #

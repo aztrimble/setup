@@ -8,6 +8,10 @@ Repository that contains directions and common setup or configuration files for 
 - [`tmux`](/tmux): .tmux.conf and .tmux directory with plugin files.
 - [`vim`](/vim): .vimrc and plugin files
 ## Stuff I do on a new Ubuntu Installation
+1. Disable unattended-upgrades
+    ```
+    sudo systemctl status unattended-upgrades
+    ```
 1. Install the default version of git from the default repositories
     ```
     sudo apt purge git && sudo apt install git
