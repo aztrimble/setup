@@ -9,7 +9,8 @@
 # 2024.09.04, A Trimble (atrimble@hawaii.edu)
 
 ## Step 1: fully update the system
-source ./SetupScripts/fullupdate.sh
+. ./SetupScripts/fullupdate.sh
+
 
 ## Adjust the VIM installation
 #sudo apt purge vim
