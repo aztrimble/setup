@@ -22,7 +22,7 @@ Repository that contains directions and common setup or configuration files for 
     ```
 1. Run the setup script
     ```
-    sudo sh ~/SetupFiles/setupscript_atrimble
+    sudo sh ~/SetupFiles/setupscript.sh
     ```
 1. Install a version of vim with global clipboard support. For instance:
     ```
