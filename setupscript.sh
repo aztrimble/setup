@@ -9,7 +9,7 @@
 # 2024.09.04, A Trimble (atrimble@hawaii.edu)
 
 ## Step 1: fully update the system
-. ./SetupScripts/fullupdate.sh
+. ~/SetupFiles/SetupScripts/fullupdate.sh
 
 
 ## Adjust the VIM installation
