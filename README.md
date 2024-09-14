@@ -10,7 +10,7 @@ Repository that contains directions and common setup or configuration files for 
 ## Stuff I do on a new Ubuntu Installation
 1. Disable unattended-upgrades
     ```
-    sudo systemctl status unattended-upgrades
+    sudo systemctl disable --now unattended-upgrades
     ```
 1. Install the default version of git from the default repositories
     ```
