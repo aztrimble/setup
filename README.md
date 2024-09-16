@@ -12,6 +12,7 @@ Repository that contains directions and common setup or configuration files for 
     ```
     sudo systemctl disable --now unattended-upgrades
     ```
+    Note, this disables all automatic upgrades - including security upgrades. Thus, you need to be diligent in running upgrades manually on a regular basis.
 1. Install the default version of git from the default repositories
     ```
     sudo apt purge git && sudo apt install git -y
