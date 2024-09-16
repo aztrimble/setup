@@ -16,6 +16,20 @@ Scripts that calls various configurations of update and upgrade
     - dist-upgrade
     - autoremove
     - autoclean
+    - snap refresh
+## Install software/packages
+Scripts that install list of packages 
+- 2.0.installPackages_all.sh 
+    - Install everything
+- 2.1.installPackages_apt.sh 
+    - Install packages listed in the installedPackages_apt file 
+    - Note, this only works for packages that do not require customization or additional steps beyond inline customization.
+- 2.2.installPackages_snap.sh 
+    - Install packages listed in the installedPackages_snap file
+    - Note, this only works for packages that do not require customization or additional steps beyond inline customization.
 ## Supporting Files
 - installedPackages_apt
     - list of packages to install using apt without any required customization
+- installedPackages_snap
+    - list of packages to install using apt without any required customization
+    
