@@ -15,7 +15,7 @@ Repository that contains directions and common setup or configuration files for 
     A reboot shouldn't technically be required, but it recommended at this point.
 
     Note, this disables all automatic upgrades - including security upgrades. Thus, you need to be diligent in running upgrades manually on a regular basis.
-1. Install the default version of git from the default repositories
+1. Install the default version of git from the default apt repositories
     ```
     sudo apt purge git && sudo apt install git -y
     ```
@@ -23,6 +23,11 @@ Repository that contains directions and common setup or configuration files for 
     ```
     git clone https://github.com/aztrimble/setup.git ~/SetupFiles
     ```
+1. Run the update scripts and reboot
+    ```
+    sh ~/SetupFiles/SetupScripts/1.0.fullupdate.sh
+    ```
+    Similar to Step 1, you shouldn't technically need to do this, but I find things run a bit faster and smoother if you do a reboot at this point. If you don't want to reboot, then you can skip this step and fun the setup script in the next step directly.
 1. Run the setup script
     ```
     sh ~/SetupFiles/SetupScripts/0.0.fullsetup.sh
