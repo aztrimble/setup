@@ -10,7 +10,7 @@ Repository that contains directions and common setup or configuration files for 
 ## Stuff I do on a new Ubuntu Installation
 1. Disable unattended-upgrades
     ```
-    sudo systemctl disable --now unattended-upgrades
+    sudo systemctl disable --now unattended-upgrades && systemctl daemon-reload
     ```
     A reboot shouldn't technically be required, but it recommended at this point.
 
