@@ -17,4 +17,4 @@
 
 while read -r package_name; do
   sudo apt install -y $package_name
-done < installedPackages_apt
+done < ~/SetupFiles/SetupScripts/installedPackages_apt
