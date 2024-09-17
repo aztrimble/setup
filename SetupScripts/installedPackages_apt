@@ -1,6 +1,5 @@
 tmux
 neofetch
-build_essential
 htop
 curl
 wget
@@ -8,3 +7,4 @@ xclip
 vim-gtk3
 stow
 ubuntu-restricted-extras
+build_essential
