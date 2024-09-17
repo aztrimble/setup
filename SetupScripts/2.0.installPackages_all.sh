@@ -7,7 +7,7 @@
 #   - Initial creation
 
 ## Install apt packages
-. ~/SetupFiles/SetupScripts/2.2.installPackages_apt.sh
+. ~/SetupFiles/SetupScripts/2.1.installPackages_apt.sh
 
 ## Install snap packages
 . ~/SetupFiles/SetupScripts/2.2.installPackages_snap.sh
