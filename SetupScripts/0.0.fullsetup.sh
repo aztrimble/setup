@@ -11,13 +11,9 @@
 ## Step 1: fully update the system
 . ~/SetupFiles/SetupScripts/1.0.fullupdate.sh
 
+## Step 2: install packages
+. ~/SetupFiles/SetupScripts/2.0.installPackages_all.sh
 
-## Adjust the VIM installation
-#sudo apt purge vim
-#sudo apt install vim-gtk3
-#sudo apt install neovim
-#sudo apt install xclip
-#
 ## Ensure tmux is installed
 #sudo apt install tmux
 #
