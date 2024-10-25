@@ -15,7 +15,7 @@ Repository that contains directions and common setup or configuration files for 
     A reboot shouldn't technically be required, but it recommended at this point.
 
     NOTE, this disables all automatic upgrades - including security upgrades. Thus, you need to be diligent in running upgrades manually on a regular basis.
-1. Install the default version of git from the default apt repositories
+1. Ensure the latest apt repositories version of git is installed.
     ```
     sudo apt update && sudo apt purge git && sudo apt install git -y
     ```
