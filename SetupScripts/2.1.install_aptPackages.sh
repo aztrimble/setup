@@ -2,7 +2,7 @@
 
 # Script file to install a list of apt packages
 #
-# Name of the file contaiing the list of apt packages to install (with modifiers):
+# Name of the file containing the list of apt packages to install (with modifiers):
 # installedPackages_apt
 #
 # Revision History

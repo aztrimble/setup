@@ -87,23 +87,6 @@ Repository that contains directions and common setup or configuration files for 
         cp ./tmux/.tmux.conf ~
         cp -r ./tmux/.tmux ~
         ```
-1. Some personal system changes
-    - Swap the "Caps Lock" and "Ctrl" keys:
-        ```
-        sudo echo "
-
-        ###################
-        # Custom Settings #
-        ###################
-
-        # Swap "Caps Lock" and "Ctrl" keys
-        XKBOPTIONS="ctrl:swapcaps"
-        >> /etc/default/keyboard
-        ```
-        Note: this change won't take effect until you restart the computer. If you want the changes to take effect immediately run:
-        ```
-        sudo dpkg-reconfigure keyboard-configuration
-        ```
 1. Install some useful software
     - Programming essentials
         ```

@@ -18,6 +18,10 @@ else
     echo "Appending"
     cat ~/SetupFiles/ConfigFiles/custom_settings_tag | sudo tee -a /etc/default/keyboard
     echo "to the bottom of the keyboard file"
+    echo "NOTE: This change won't take effect until you restart the computer."
+    echo "If you want the changes to take effect immediately run:"
+    echo "sudo dpkg-reconfigure keyboard-configuration"
+
 fi
 # Next append the contents of the keyboard_swapcaps file to the system keyboard file
 if grep -q 'XKBOPTIONS="ctrl:swapcaps"' '/etc/default/keyboard'; then
