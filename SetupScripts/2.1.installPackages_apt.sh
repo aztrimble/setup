@@ -13,8 +13,10 @@
 #       - Default value hard coded
 #       - Overwritten by user input
 #       - Error checking
-
+# 2025.01.10, A Trimble (atrimble@hawaii.edu)
+#   - Change to using nala for a prettier experience
+#   - Note: ToDO from initial creation should still be completed
 
 while read -r package_name; do
-  sudo apt install -y $package_name
+  sudo nala install -y $package_name
 done < ~/SetupFiles/SetupScripts/installedPackages_apt

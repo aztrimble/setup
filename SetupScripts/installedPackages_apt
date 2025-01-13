@@ -8,4 +8,6 @@ xclip
 vim-gtk3
 stow
 ubuntu-restricted-extras
-build_essential
+build-essential
+cmake
+python3-pip

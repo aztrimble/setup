@@ -12,7 +12,7 @@ Repository that contains directions and common setup or configuration files for 
     ```
     sudo systemctl disable --now unattended-upgrades && systemctl daemon-reload
     ```
-    A reboot shouldn't technically be required, but it recommended at this point.
+    A reboot shouldn't technically be required, but I recommended it at this point, just to stop the Software Updater from continually interrupting.
 
     NOTE, this disables all automatic upgrades - including security upgrades. Thus, you need to be diligent in running upgrades manually on a regular basis.
 1. Ensure the latest apt repositories version of git is installed.
@@ -23,6 +23,10 @@ Repository that contains directions and common setup or configuration files for 
     ```
     git clone https://github.com/aztrimble/setup.git ~/SetupFiles
     ```
+1. Install nala for a better experience
+    ```
+    sudo apt install nala -y
+    ```
 1. Run the update scripts and reboot
     ```
     sh ~/SetupFiles/SetupScripts/1.0.fullupdate.sh
@@ -32,6 +36,8 @@ Repository that contains directions and common setup or configuration files for 
     ```
     sh ~/SetupFiles/SetupScripts/0.0.fullsetup.sh
     ```
+
+## NOTE: as of 1/10/2025 the remainder is obsolete and being worked on.
 1. Install a version of vim with global clipboard support. For instance:
     ```
     sudo apt purge vim
