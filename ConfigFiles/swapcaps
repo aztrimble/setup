@@ -1,0 +1,3 @@
+
+# Swap "Caps Lock" and "Ctrl" keys
+XKBOPTIONS="ctrl:swapcaps"
