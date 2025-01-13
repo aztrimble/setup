@@ -8,6 +8,7 @@
 #
 # Revision History
 # 2024.09.04, A Trimble (atrimble@hawaii.edu)
+#   - Initial creation
 
 ## Step 1: fully update the system
 . ~/SetupFiles/SetupScripts/1.0.fullupdate.sh

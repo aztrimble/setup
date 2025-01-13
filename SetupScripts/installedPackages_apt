@@ -11,3 +11,4 @@ ubuntu-restricted-extras
 build-essential
 cmake
 python3-pip
+timeshift

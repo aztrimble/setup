@@ -11,11 +11,10 @@ Basically scripts that call other scripts
 ## Update and Upgrade
 Scripts that calls various configurations of update and upgrade
 - 1.0.fullupgrade.sh 
-    - upgrade 
-    - update 
-    - dist-upgrade
-    - autoremove
-    - autoclean
+    - Converted to using Nala on 2025.01.12
+        - From the nala man page, nala upgrade is the equivalent of apt update && apt full-upgrade --auto-remove.
+        - Since this is running full-upgrade always, there is a small risk an older dependency will be removed and break some other program that used this dependency.
+    - clean
     - snap refresh
 ## Install software/packages
 Scripts that install list of packages 
