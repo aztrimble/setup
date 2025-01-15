@@ -12,9 +12,12 @@
 #     - Change from autoclean to clean since nala doesn't use autoclean
 #       - previous command: sudo apt autoclean -y
 
+## Insure nala is installed first
+. ~/SetupFiles/SetupScripts/2.3.install_nala.sh
+
 ## Update apt packages using nala
 sudo nala upgrade -y
-sudo nala clean 
+sudo nala clean
 
 ## Update snap packages
 sudo snap refresh

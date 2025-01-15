@@ -23,15 +23,3 @@
 #sudo apt install git
 #git config --global core.editor nvim
 #git config --global init.defaultBranch main
-#
-#
-## Swap the "Caps Lock" and "Ctrl" keys
-#sudo echo "
-####################
-## Custom Settings #
-####################
-#
-## Swap "Caps Lock" and "Ctrl" keys
-#XKBOPTIONS=ctrl:swapcaps" >> /etc/default/keyboard
-#
-#
