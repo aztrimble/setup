@@ -1,6 +1,7 @@
 ubuntu-restricted-extras
 tmux
 zsh
+fzf
 neofetch
 htop
 curl
