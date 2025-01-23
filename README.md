@@ -15,26 +15,32 @@ Repository that contains directions and common setup or configuration files for 
     A reboot shouldn't technically be required, but I recommended it at this point, just to stop the Software Updater from continually interrupting.
 
     NOTE, this disables all automatic upgrades - including security upgrades. Thus, you need to be diligent in running upgrades manually on a regular basis.
+1. Install nala for a better installation experience
+    ```
+    sudo apt update && sudo apt install nala -y
+    ```
+1. Configure nala to utilize the fastest 2-4 mirrors.
+    ```
+    sudo nala fetch 
+    ```
+    Choose 2-4 of the most trustworthy mirrors out of the fastest few.
+    NOTE, if you are configuring a laptop you may need to do this each time you upgrade from a different internet connection.
 1. Ensure the latest apt repositories version of git is installed.
     ```
-    sudo apt update && sudo apt purge git && sudo apt install git -y
+    sudo nala update && sudo apt purge git && sudo apt install git -y
     ```
 1. Clone this Repository
     ```
     git clone https://github.com/aztrimble/setup.git ~/SetupFiles
     ```
-1. Install nala for a better experience
-    ```
-    sudo apt install nala -y
-    ```
 1. Run the update scripts and reboot
     ```
-    sh ~/SetupFiles/SetupScripts/1.0.fullupdate.sh
+    . ~/SetupFiles/SetupScripts/1.0.fullupdate.sh
     ```
     Similar to Step 1, you shouldn't technically need to do this, but I find things run a bit faster and smoother if you do a reboot at this point. If you don't want to reboot, then you can skip this step and run the setup script in the next step directly without rebooting.
 1. Run the setup script
     ```
-    sh ~/SetupFiles/SetupScripts/0.0.fullsetup.sh
+    . ~/SetupFiles/SetupScripts/0.0.fullsetup.sh
     ```
 
 ## NOTE: as of 1/10/2025 the remainder is obsolete and being worked on.

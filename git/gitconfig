@@ -1,5 +1,7 @@
 [alias]
-  usercommit = -c user.name='First Last' -c user.email='useremail@hawaii.edu' commit
+  usercommit = !git add -A && git -c user.name='First Last' -c user.email='useremail@hawaii.edu' commit
+  # trimblecommit = !git add -A && git -c user.name='A Trimble' -c user.email='atrimble@hawaii.edu' commit
+  pom push origin main
 [core]
 	editor = vim
 [init]
