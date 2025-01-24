@@ -7,7 +7,8 @@
 #   - Initial creation
 
 # Install nala using apt if it isn't already installed.
-if dpkg -s nala &>/dev/null; then
+if dpkg -s nala &> /dev/null; then
+  :
 else
   echo 'Installing nala'
   sudo apt update
