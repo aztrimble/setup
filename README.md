@@ -43,7 +43,16 @@ Repository that contains directions and common setup or configuration files for 
     . ~/SetupFiles/SetupScripts/0.0.fullsetup.sh
     ```
 
-## Stow command notes
+## To-Do
+List of items that need to be added to the automatic setup
+- Decide whether to include a full .bashrc file in the DotFiles repository or to append to the existing .bashrc
+  - Pros
+    - A change to one computer propogates to all
+  - Cons
+    - Maybe a new version has a different default file (although this might be easier to check and correct than managing appends)
+- Configure swap properly
+- Install ros and add source to bashrc and zshrc configurations
+
 ```
 stow --verbose --dir ~/SetupFiles/DotFiles --target ~ PACKAGENAME
 ```
