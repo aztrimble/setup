@@ -11,3 +11,11 @@ Reminder of commands I don't need very often so I won't remember them without wr
     -- most common?
 - GitLab
 - GitButler
+
+
+## ROS
+Eventually the following might be needed for ROS workspaces.
+```
+*/*
+!src/
+```

@@ -2,6 +2,6 @@
   trimblecommit = !git add -A && git -c user.name='A Trimble' -c user.email='atrimble@hawaii.edu' commit
   pom = push origin main
 [core]
-	editor = vim
+  editor = nvim
 [init]
-	defaultBranch = main
+  defaultBranch = main

@@ -27,7 +27,7 @@ Repository that contains directions and common setup or configuration files for 
     NOTE, if you are configuring a laptop you may need to do this each time you upgrade from a different internet connection.
 1. Ensure the latest apt repositories version of git is installed.
     ```
-    sudo nala update && sudo apt purge git && sudo apt install git -y
+    sudo apt update && sudo apt purge git && sudo apt install git -y
     ```
 1. Clone this Repository
     ```
@@ -42,6 +42,11 @@ Repository that contains directions and common setup or configuration files for 
     ```
     . ~/SetupFiles/SetupScripts/0.0.fullsetup.sh
     ```
+
+## Stow command notes
+```
+stow --verbose --dir ~/SetupFiles/DotFiles --target ~ PACKAGENAME
+```
 
 ## NOTE: as of 1/10/2025 the remainder is obsolete and being worked on.
 1. Install a version of vim with global clipboard support. For instance:
