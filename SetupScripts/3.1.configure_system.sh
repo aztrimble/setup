@@ -1,33 +1,17 @@
 #! /bin/sh
 
-# Script file to make system level configuation changes. Things like keyboard bindings.
+# Script file to make system level configuation changes. Things like keyboard bindings, swap file, etc.
+#   Note: uses absolute file paths
 #
 # Revision History
 # 2025.01.12, A Trimble (atrimble@hawaii.edu)
 #   - Initial creation
-#   - ToDo
-#       - Absolute and known file paths are assumed.
+# 2025.02.03, A Trimble (atrimble@hawaii.edu)
+#   - Convert to individual files that are called by a single script.
+#   - Add script to adjust swap file size
 
 ## Swap "Caps Lock" and "Ctrl" keys
-# First create a backup of the original keyboard file if it doesn't exist
-if [ -f "/etc/default/keyboard.original" ]; then
-    echo "Backup version of keyboard file already exists"
-else
-    echo "Creating backup of keyboard file (keyboard.original)"
-    sudo cp /etc/default/keyboard /etc/default/keyboard.original
-    echo "Appending"
-    cat ~/SetupFiles/ConfigFiles/custom_settings_tag | sudo tee -a /etc/default/keyboard
-    echo "to the bottom of the keyboard file"
-    echo "NOTE: This change won't take effect until you restart the computer."
-    echo "If you want the changes to take effect immediately run:"
-    echo "sudo dpkg-reconfigure keyboard-configuration"
+. ~/SetupFiles/SetupScripts/3.4.configure_swapCaps.sh
 
-fi
-# Next append the contents of the keyboard_swapcaps file to the system keyboard file
-if grep -q 'XKBOPTIONS="ctrl:swapcaps"' '/etc/default/keyboard'; then
-    echo "The keyboard file already contains the swapcaps configuration"
-else
-    echo "Appending"
-    cat ~/SetupFiles/ConfigFiles/swapcaps | sudo tee -a /etc/default/keyboard
-    echo "to the bottom of the keyboard file"
-fi
+## Adjust swapfile size
+. ~/SetupFiles/SetupScripts/3.3.configure_adjustSwap.sh
