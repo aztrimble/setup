@@ -1,4 +1,6 @@
+fontconfig
 ubuntu-restricted-extras
+tree
 tmux
 zsh
 fzf
