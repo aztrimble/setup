@@ -8,13 +8,8 @@
 # Revision History
 # 2024.09.16, A Trimble (atrimble@hawaii.edu)
 #   - Initial creation
-#   - ToDO:
-#     - Add user file input: objectives
-#       - Default value hard coded
-#       - Overwritten by user input
-#       - Error checking
 
-
+# Use snap to install each package in the file named below. One package per line.
 while read -r package_name; do
   sudo snap install $package_name
 done < ~/SetupFiles/SetupScripts/installedPackages_snap

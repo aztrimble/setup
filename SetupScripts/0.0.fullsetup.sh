@@ -10,16 +10,8 @@
 # 2024.09.04, A Trimble (atrimble@hawaii.edu)
 #   - Initial creation
 
-## Step 1: fully update the system
-. ~/SetupFiles/SetupScripts/1.0.fullupdate.sh
+## Step 1: use the upgrade_full script to update and upgrade everything.
+. ~/SetupFiles/SetupScripts/1.0.update_full.sh
 
-## Step 2: install packages
-. ~/SetupFiles/SetupScripts/2.0.installPackages_all.sh
-
-## Ensure tmux is installed
-#sudo apt install tmux
-#
-## Ensure git is installed and set the editor and branch defaults
-#sudo apt install git
-#git config --global core.editor nvim
-#git config --global init.defaultBranch main
+## Step 2: use the install_all script to install everything
+. ~/SetupFiles/SetupScripts/2.0.install_all.sh
