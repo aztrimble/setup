@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 if grep -q '/swapfile' './fstab'; then
   echo "fstab contains a /swapfile line...Removing the line."

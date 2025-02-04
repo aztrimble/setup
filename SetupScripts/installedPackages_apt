@@ -1,5 +1,5 @@
 fontconfig
-ubuntu-restricted-extras
+# ubuntu-restricted-extras
 tree
 tmux
 zsh
@@ -11,7 +11,7 @@ curl
 wget
 unzip
 xclip
-vim-gtk3
+# vim-gtk3
 stow
 build-essential
 cmake

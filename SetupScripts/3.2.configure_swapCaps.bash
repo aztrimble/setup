@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # Script file to make system level configuation changes. Things like keyboard bindings.
 #

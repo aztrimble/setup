@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # Script file to run all configuration scripts (and thus apply all configurations).
 #
@@ -7,4 +7,4 @@
 #   - Initial creation
 
 ## Run the system configuration script 
-. ~/SetupFiles/SetupScripts/3.1.configure_system.sh
+. ~/SetupFiles/SetupScripts/3.1.configure_system.bash

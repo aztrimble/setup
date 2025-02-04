@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # Script file that utilizes the stow package to create symlinks to all the configuration dotfiles. 
 #

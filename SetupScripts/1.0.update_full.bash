@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # Script file to fully update and upgrade the current system.
 #
@@ -13,7 +13,7 @@
 #       - previous command: sudo apt autoclean -y
 
 ## Update and upgrade apt packages 
-. ~/SetupFiles/SetupScripts/1.1.update_apt.sh
+. ~/SetupFiles/SetupScripts/1.1.update_apt.bash
 
 ## Update and upgrade snap packages
-. ~/SetupFiles/SetupScripts/1.2.update_snap.sh
+. ~/SetupFiles/SetupScripts/1.2.update_snap.bash

@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/babash
 
 # Script to set the recommended swap file size based on the amount of installed ram
 #

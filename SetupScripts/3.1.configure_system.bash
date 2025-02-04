@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # Script file to make system level configuation changes. Things like keyboard bindings, swap file, etc.
 #   Note: uses absolute file paths
@@ -11,7 +11,7 @@
 #   - Add script to adjust swap file size
 
 ## Swap "Caps Lock" and "Ctrl" keys
-. ~/SetupFiles/SetupScripts/3.4.configure_swapCaps.sh
+. ~/SetupFiles/SetupScripts/3.4.configure_swapCaps.bash
 
 ## Adjust swapfile size
-. ~/SetupFiles/SetupScripts/3.3.configure_adjustSwap.sh
+. ~/SetupFiles/SetupScripts/3.3.configure_adjustSwap.bash

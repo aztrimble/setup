@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # Script file to install a list of fonts system wide. 
 #   - INPUTS

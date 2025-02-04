@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # Script file to install a list of snap packages
 #
@@ -11,5 +11,9 @@
 
 # Use snap to install each package in the file named below. One package per line.
 while read -r package_name; do
-  sudo snap install $package_name
+  if [ "${package_name:0:1}" == "#" ]; then 
+    echo "${package_name:1} commented out"
+  else
+    sudo snap install $package_name
+  fi
 done < ~/SetupFiles/SetupScripts/installedPackages_snap
