@@ -10,19 +10,25 @@
 
 # Iterate through each line of the installedFonts file
 while read -r font_url; do
-  # Determine the filename and fontname
-  filename=$(basename "$font_url")
-  fontname=${filename%.*}
-  if [ -f ~/Downloads/Fonts/$filename ]; then
-    echo $filename 'is already downloaded, skipping this font.'
-    echo 'If you meant to update this font:'
-    echo '  1) Manually delete ~/Downloads/Fonts/'$filename
-    echo '  2) Rerun the script'
+  # Determine if the font is commented out
+  if [ "${font_url:0:1}" == "#" ]; then 
+    echo "$(basename "font_url") commented out"
   else
-    # Download each font to the ~/Downloads/Fonts directory
-    wget -P ~/Downloads/Fonts $font_url
-    # Unzip file to the system font folder
-    sudo unzip ~/Downloads/Fonts/$filename -d /usr/share/fonts/$fontname
+    # Determine the filename and fontname
+    filename=$(basename "$font_url")
+    fontname=${filename%.*}
+    # Determine if the font has already been downloaded
+    if [ -f ~/Downloads/Fonts/$filename ]; then
+      echo $filename 'is already downloaded, skipping this font.'
+      echo 'If you meant to update this font:'
+      echo '  1) Manually delete ~/Downloads/Fonts/'$filename
+      echo '  2) Rerun the script'
+    else
+      # Download each font to the ~/Downloads/Fonts directory
+      wget -P ~/Downloads/Fonts $font_url
+      # Unzip file to the system font folder
+      sudo unzip ~/Downloads/Fonts/$filename -d /usr/share/fonts/$fontname
+    fi
   fi
 done < ~/SetupFiles/SetupScripts/installedFonts
 

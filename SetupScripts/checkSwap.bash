@@ -10,3 +10,10 @@ fi
 
 
 totalmem=$(free -m | awk '/^Mem:/{print $2}')
+
+swapfilename=$(sudo swapon --show | awk 'NR==2 {print $1}')
+if [ -z "$swapfilename" ]; then
+  echo "swapon returns empty...assuming no swapfile exists"
+else
+  echo "swapon returns swapfile named: $swapfilename"
+fi

@@ -1,4 +1,4 @@
-#! /bin/babash
+#! /bin/bash
 
 # Script to set the recommended swap file size based on the amount of installed ram
 #
@@ -25,16 +25,21 @@ else
   echo "ERROR: Indicating installed ram > 64 Gb"
 fi
 
-swapsize=10
-
-## Turn off all swap before creating new swap
+## Delete existing swapfile if it already exists
+swapfilename=$(sudo swapon --show | awk 'NR==2 {print $1}')
+# Turn off swap before continuing
 sudo swapoff -a
+if [ -z "$swapfilename" ]; then
+  echo "swapon returns empty...assuming no swapfile exists"
+else
+  echo "swapon returns swapfile named: $swapfilename"
+  sudo rm $swapfilename
+fi
 
-
-## Allocate a block of disk memory for swap space
+## Allocate an appropriately sized block of disk memory for swap space
 sudo fallocate --length ${swapsize}G /swapfile
 
-## Set permissions to only the current user
+## Set the swapfile permissions to only the current user
 sudo chmod 600 /swapfile
 
 ## Mark the file as swapspace
@@ -46,8 +51,6 @@ sudo swapon /swapfile
 ## Write the change to the fstab file so the change persists.
 if grep -q '/swapfile' '/etc/fstab'; then
   echo "fstab already contains a /swapfile line...removing the line to add the new custom line."
-else
-  echo "Adding:"
-  echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
-  echo "to the fstab file."
+  sudo sed -i "/^\/swapfile/d" /etc/fstab
 fi
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab

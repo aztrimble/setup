@@ -11,3 +11,6 @@
 
 ## Install snap packages
 . ~/SetupFiles/SetupScripts/2.2.install_snapPackages.bash
+
+## Install fonts
+. ~/SetupFiles/SetupScripts/2.3.install_fonts.bash
