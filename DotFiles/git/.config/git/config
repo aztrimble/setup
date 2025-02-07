@@ -1,7 +1,6 @@
 [alias]
   trimblecommit = !git add -A && git -c user.name='A Trimble' -c user.email='atrimble@hawaii.edu' commit
-  pom = push origin main
-  startssh = !eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github-key
+  pom = push orgin main
 [core]
   editor = nvim
 [init]

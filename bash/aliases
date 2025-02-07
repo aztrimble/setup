@@ -10,12 +10,13 @@ alias lsa='ls -A'
 alias cpv='rsync -avh --info=progress2'
 
 # Quick update
-alias qupdate="sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y"
-
-# Just use neovim all the time already...
-# alias vim='nvim'
+alias qupdate='. ~/SetupFiles/SetupScripts/1.0.update_full.bash'
 
 # Find a sting in a file. NOTE: this command only works in bash not in zsh.
 fstr() {
   grep -Rnw "." -e "$1"
 }
+
+# Enable ssh-agent and add key
+alias gitssh="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/github-key"
+alias gitssh-off="eval '$(ssh-agent -k)'"
