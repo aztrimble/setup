@@ -14,17 +14,19 @@ Not currently accurate - to be edited.
 
 ## Stuff I do on a new Ubuntu Installation
 
-1. Disable unattended-upgrades
+1. Disable unattended-upgrades temporarily just to stop the Software Updater from continually interrupting the setup process.
     ```
     sudo systemctl disable --now unattended-upgrades && systemctl daemon-reload
     ```
-    A reboot shouldn't technically be required, but I recommended it at this point, just to stop the Software Updater from continually interrupting.
-
-    To check if this worked after reboot run
+    To check if this worked run:
     ```
     sudo systemctl status unattended-upgrades
     ```
-    NOTE, this disables all automatic upgrades - including security upgrades. Thus, you need to be diligent in running upgrades manually on a regular basis.
+    NOTE: on most installations this change will not persist through a reboot. You can check the `preset:` status in the above command. If it is `enabled`, then unattended-upgrades will restart when the system is rebooted, which is likely the best option since permently dissabling this disables all automatic upgrades - including security upgrades. If you want make this change permenant, run:
+   ```
+   sudo nvim /etc/apt/apt.conf.d/20auto-upgrades
+   ```
+   and change the values from `1` to `0`. However, if you choose to do this, you need to be diligent about running upgrades manually on a regular basis.
 
 1. Install nvim for editing config files
     ```
