@@ -28,7 +28,7 @@ Not currently accurate - to be edited.
 
 1. Install nvim for editing config files
     ```
-    sudo snap install nvim
+    sudo snap install nvim --classic
     ```
 
 1.  Adjust the text size if necessary
@@ -51,7 +51,7 @@ Not currently accurate - to be edited.
     
 1. Ensure the latest apt repositories version of git is installed.
     ```
-    sudo apt update && sudo apt purge git && sudo apt install git -y
+    sudo apt update && sudo apt install git -y
     ```
 
 1. Clone this Repository
