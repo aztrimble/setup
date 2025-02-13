@@ -6,11 +6,12 @@ Repository that contains directions and common setup or configuration files for 
 
 ## Directory Listing
 
+Not currently accurate - to be edited.
 - [`bash`](/bash): customized settings for .bashrc, .bash_alias, and .alias files
 - [`git`](/git): .gitconfig and other git configuration files 
 - [`tmux`](/tmux): .tmux.conf and .tmux directory with plugin files.
 - [`vim`](/vim): .vimrc and plugin files
-- 
+
 ## Stuff I do on a new Ubuntu Installation
 
 1. Disable unattended-upgrades
@@ -20,22 +21,22 @@ Repository that contains directions and common setup or configuration files for 
     A reboot shouldn't technically be required, but I recommended it at this point, just to stop the Software Updater from continually interrupting.
 
     To check if this worked after reboot run
-   ```
-   sudo systemctl status unattended-upgrades
-   ```
+    ```
+    sudo systemctl status unattended-upgrades
+    ```
     NOTE, this disables all automatic upgrades - including security upgrades. Thus, you need to be diligent in running upgrades manually on a regular basis.
 
 1. Install nvim for editing config files
-   ```
-   sudo snap install nvim
-   ```
+    ```
+    sudo snap install nvim
+    ```
 
-1. Adjust the text size if necessary
-   ```
-   sudo nvim /etc/default/console-setup
-   ```
-   Change the `FONTSIZE` variable to an appropraite value. E.g. `FONTSIZE="16X32"'
-   
+1.  Adjust the text size if necessary
+    ```
+    sudo nvim /etc/default/console-setup
+    ```
+    Change the `FONTSIZE` variable to an appropraite value. E.g. `FONTSIZE="16X32"'
+     
 1. Install nala for a better installation experience
     ```
     sudo apt update && sudo apt install nala -y
@@ -47,7 +48,7 @@ Repository that contains directions and common setup or configuration files for 
     Choose 2-4 of the most trustworthy mirrors out of the fastest few.
     NOTE, if you are configuring a laptop you may need to do this each time you upgrade from a different internet connection.
     NOTE, if you choose not to do this step, nala will likley use the sources in `/etc/apt/sources.list` and thus you will sacrifice some speed.
-   
+    
 1. Ensure the latest apt repositories version of git is installed.
     ```
     sudo apt update && sudo apt purge git && sudo apt install git -y
@@ -57,6 +58,11 @@ Repository that contains directions and common setup or configuration files for 
     ```
     git clone https://github.com/aztrimble/setup.git ~/SetupFiles
     ```
+    Note: If the computer you are setting up will be used to edit the setup files, follow the directions on the [Github Docs: Generating a new ssh-key and adding it to the agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) page and add this ssh key to the ssh keys. Then use
+   ```
+   git clone git@github.com:aztrimble/setup.git
+   ```
+   instead of https.
     
 1. Run the update scripts and reboot
     ```
