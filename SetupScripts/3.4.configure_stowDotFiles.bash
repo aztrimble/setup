@@ -12,4 +12,5 @@ targetdir=~  # Location to create the symlinks
 
 ## Run stow on the full dotfilesdir
 #stow --verbose --dir $dotfilesdir --target $targetdir .
-stow --verbose --dir $dotfilesdir --target $targetdir tmux
+#stow --verbose --dir $dotfilesdir --target $targetdir tmux
+stow --verbose --dir $dotfilesdir --target $targetdir git

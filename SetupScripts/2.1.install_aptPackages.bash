@@ -18,4 +18,4 @@ while read -r package_name; do
   else
     sudo nala install -y $package_name
   fi
-done < ~/SetupFiles/SetupScripts/installedPackages_apt
+done < ~/SetupFiles/InstallLists/installedPackages_apt

@@ -16,4 +16,4 @@ while read -r package_name; do
   else
     sudo snap install $package_name
   fi
-done < ~/SetupFiles/SetupScripts/installedPackages_snap
+done < ~/SetupFiles/InstallLists/installedPackages_snap

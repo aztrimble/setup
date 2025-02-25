@@ -30,7 +30,7 @@ while read -r font_url; do
       sudo unzip ~/Downloads/Fonts/$filename -d /usr/share/fonts/$fontname
     fi
   fi
-done < ~/SetupFiles/SetupScripts/installedFonts
+done < ~/SetupFiles/InstallLists/installedFonts
 
 # Update the font cache to recoginze the new fonts
 sudo fc-cache -f -v
