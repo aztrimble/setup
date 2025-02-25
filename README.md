@@ -28,11 +28,11 @@ Not currently accurate - to be edited.
     ```
     sudo nvim /etc/default/console-setup
     ```
-    Change the `FONTSIZE` variable to an appropraite value. E.g. `FONTSIZE="16X32"'
+    Change the `FONTSIZE` variable to an appropraite value. E.g. `FONTSIZE="16x32"'
 
     For some more fun you can try to figure out how to use sed or awk to do it...
     ```
-    sudo sed -i '/FONTSIZE/s/".*"/"16X32"/' /etc/default/console-setup
+    sudo sed -i '/FONTSIZE/s/".*"/"16x32"/' /etc/default/console-setup
     ```
     
 1. Install nala for a better installation experience
