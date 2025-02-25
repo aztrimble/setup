@@ -63,12 +63,6 @@ Not currently accurate - to be edited.
     git clone https://github.com/aztrimble/setup.git ~/SetupFiles
     ```
     
-1. Run the update scripts and reboot
-    ```
-    . ~/SetupFiles/SetupScripts/1.0.fullupdate.sh
-    ```
-    Similar to Step 1, you shouldn't technically need to do this, but I find things run a bit faster and smoother if you do a reboot at this point. If you don't want to reboot, then you can skip this step and run the setup script in the next step directly without rebooting.
-   
 1. Run the setup script
     ```
     . ~/SetupFiles/SetupScripts/0.0.fullsetup.sh

@@ -11,7 +11,7 @@
 #   - Add script to adjust swap file size
 
 ## Swap "Caps Lock" and "Ctrl" keys
-. ~/SetupFiles/SetupScripts/3.2.configure_swapCaps.bash
+. ~/SetupFiles/SetupScripts/3.1-1.configure_swapCaps.bash
 
 ## Adjust swapfile size
-. ~/SetupFiles/SetupScripts/3.3.configure_adjustSwap.bash
+. ~/SetupFiles/SetupScripts/3.1-2.configure_adjustSwap.bash

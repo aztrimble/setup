@@ -15,3 +15,6 @@
 
 ## Step 2: use the install_all script to install everything
 . ~/SetupFiles/SetupScripts/2.0.install_all.bash
+
+## Step 3: use the configure_all script to configure everything
+. ~/SetupFiles/SetupScripts/3.0.configure_all.bash
