@@ -18,16 +18,7 @@ Not currently accurate - to be edited.
     ```
     sudo systemctl disable --now unattended-upgrades && systemctl daemon-reload
     ```
-    To check if this worked run:
-    ```
-    sudo systemctl status unattended-upgrades
-    ```
-    NOTE: on most installations this change will not persist through a reboot. You can check the `preset:` status in the above command. If it is `enabled`, then unattended-upgrades will restart when the system is rebooted, which is likely the best option since permently dissabling this disables all automatic upgrades - including security upgrades. If you want make this change permenant, run:
-   ```
-   sudo nvim /etc/apt/apt.conf.d/20auto-upgrades
-   ```
-   and change the values from `1` to `0`. However, if you choose to do this, you need to be diligent about running upgrades manually on a regular basis.
-
+    
 1. Install nvim for editing config files
     ```
     sudo snap install nvim --classic
@@ -38,7 +29,12 @@ Not currently accurate - to be edited.
     sudo nvim /etc/default/console-setup
     ```
     Change the `FONTSIZE` variable to an appropraite value. E.g. `FONTSIZE="16X32"'
-     
+
+    For some more fun you can try to figure out how to use sed or awk to do it...
+    ```
+    sudo sed -i '/FONTSIZE/s/".*"/"16X32"/' /etc/default/console-setup
+    ```
+    
 1. Install nala for a better installation experience
     ```
     sudo apt update && sudo apt install nala -y
