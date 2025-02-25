@@ -47,9 +47,9 @@ Not currently accurate - to be edited.
     NOTE, if you are configuring a laptop you may need to do this each time you upgrade from a different internet connection.
     NOTE, if you choose not to do this step, nala will likley use the sources in `/etc/apt/sources.list` and thus you will sacrifice some speed.
     
-1. Ensure the latest apt repositories version of git is installed.
+1. Ensure the latest repostitory version of git is installed.
     ```
-    sudo apt update && sudo apt install git -y
+    sudo nala install git -y
     ```
 
 1. Clone this Repository
