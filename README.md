@@ -53,14 +53,15 @@ Not currently accurate - to be edited.
     ```
 
 1. Clone this Repository
+    If the computer you are setting up will be used to edit the setup files, follow the directions on the [Github Docs: Generating a new ssh-key and adding it to the agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) page and add the ssh key you create to the ssh keys for this repostitory. Then use
+    ```
+    git clone git@github.com:aztrimble/setup.git
+    ```
+
+    If not, you can skip setting up ssh and just clone using https.
     ```
     git clone https://github.com/aztrimble/setup.git ~/SetupFiles
     ```
-    Note: If the computer you are setting up will be used to edit the setup files, follow the directions on the [Github Docs: Generating a new ssh-key and adding it to the agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) page and add this ssh key to the ssh keys. Then use
-   ```
-   git clone git@github.com:aztrimble/setup.git
-   ```
-   instead of https.
     
 1. Run the update scripts and reboot
     ```
