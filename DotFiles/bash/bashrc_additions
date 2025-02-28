@@ -1,0 +1,8 @@
+# Customized terminal/bash settings
+## Adjust the path display
+export PROMPT_DIRTRIM=1
+
+## Load the common aliases file
+if [ -f ~/.aliases ]; then
+  . ~/.aliases
+fi

@@ -1,22 +1,26 @@
-# Change behavior of cp and mv for safety
+## Change behavior of cp and mv for safety
+### Standard copy and move commands
 alias cp='cp -vi'
 alias mv='mv -vi'
-
-# List command: ls
-alias lsd='ls -lh'
-alias lsa='ls -A'
-
-# Verbose copying with rsync
+### Verbose copying with rsync
 alias cpv='rsync -avh --info=progress2'
 
-# Quick update
-alias qupdate='. ~/SetupFiles/SetupScripts/1.0.update_full.bash'
+## Add/modify some ls aliases
+alias ll='ls -AlF'
+alias lr='ls -Altr'
 
-# Find a sting in a file. NOTE: this command only works in bash not in zsh.
+## Add some aliases to simplify administrative tasks.
+### Easier access to xdg-open
+alias open='xdg-open'
+### Quick update
+alias qupdate='. ~/SetupFiles/SetupScripts/1.0.update_full.bash'
+### Find a sting in a file. NOTE: this command only works in bash not in zsh.
 fstr() {
   grep -Rnw "." -e "$1"
 }
 
-# Enable ssh-agent and add key
-alias gitssh="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/github-key"
-alias gitssh-off="eval '$(ssh-agent -k)'"
+## Add some git ssh related aliases
+### Enable ssh-agent and add key
+#alias gitssh="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/github-key"
+### Shut down the ssh-agent
+#alias gitssh-off="eval '$(ssh-agent -k)'"
