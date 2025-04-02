@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# Script file to make system level configuation changes. Things like keyboard bindings.
+# Script file to make system level configuation changes. Namely, swap the "Caps Lock" and "Ctrl" keys
 #
 # Revision History
 # 2025.01.12, A Trimble (atrimble@hawaii.edu)

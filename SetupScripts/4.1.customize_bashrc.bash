@@ -1,15 +1,15 @@
 #! /bin/bash
 
 # Script file that:
-#   - appends to the .bashrc file 
-#   - uses stow to add an aliases file to the ~ directory
+#   - appends some customizations to the .bashrc file 
+#   - creates a symlink to an aliases file
 #
 # Revision History
 # 2025.02.27, A Trimble (atrimble@hawaii.edu)
 #   - Initial creation
 
 ## Announce intentions
-echo "Configuring bash"
+echo "Configuring bashrc"
 
 ## First check to make sure the bashrc hasn't already been appended.
 if grep -q 'CUSTOM SETTINGS' ~/.bashrc; then
@@ -26,7 +26,7 @@ if [ -h ~/.aliases ]; then
     echo "Aliases already linked"
 else
     echo "Linking the aliases file"
-    ln -s ~/SetupFiles/DotFiles/bash/aliases ~/.aliases
+    ln -s ~/SetupFiles/DotFiles/aliases ~/.aliases
 fi
 
 ## Source the new bashrc file
