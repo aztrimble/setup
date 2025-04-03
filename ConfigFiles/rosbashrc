@@ -1,0 +1,8 @@
+
+#######
+# ROS #
+#######
+# Load a config file for sourcing ros software and workspaces
+if [ -f ~/ROS/sourceros ]; then
+  . ~/ROS/sourceros
+fi

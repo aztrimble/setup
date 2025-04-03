@@ -1,0 +1,6 @@
+# List of ROS software and workspaces to source
+
+## Core Software
+source /opt/ros/jazzy/setup.bash
+
+## Workspaces

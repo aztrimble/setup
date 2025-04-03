@@ -10,7 +10,7 @@
 scriptfiledir=~/SetupFiles/SetupScripts  # Location of the setup scripts
 dotfilesdir=~/SetupFiles/DotFiles  # Location of the dotfiles source files
 targetdir=~/.config  # Location to create most symlinks
-stowdirs=(git tmux)  # List of directories in the dotfiles directory to apply the stow procss to
+stowdirs=(git tmux nvim)  # List of directories in the dotfiles directory to apply the stow procss to
 
 ## Add customizations to the bashrc file and symlink the aliases file (used by both bash and zsh)
 . $scriptfiledir/4.1.customize_bashrc.bash
