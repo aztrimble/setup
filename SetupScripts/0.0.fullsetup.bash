@@ -18,3 +18,6 @@
 
 ## Step 3: use the configure_all script to configure everything
 . ~/SetupFiles/SetupScripts/3.0.configure_all.bash
+
+## Step 4: use the customize_all script to apply all customizations
+. ~/SetupFiles/SetupScripts/4.0.customize_all.bash

@@ -16,3 +16,4 @@ stow
 build-essential
 cmake
 python3-pip
+manpages-dev

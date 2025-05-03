@@ -20,9 +20,3 @@ for item in ${stowdirs[*]}
 do
   . $scriptfiledir/4.2.customize_applyStow.bash $dotfilesdir $targetdir $item
 done
-
-## Adjust swapfile size
-# . ~/SetupFiles/SetupScripts/3.2.configure_adjustSwap.bash
-#
-## Use zsh as system default (instead of bash)
-#. ~/SetupFiles/SetupScripts/3.3.configure_zsh.bash
