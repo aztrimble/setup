@@ -21,6 +21,6 @@ fstr() {
 
 ## Add some git ssh related aliases
 ### Enable ssh-agent and add key
-#alias gitssh="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/github-key"
+alias gitssh='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github-key'
 ### Shut down the ssh-agent
-#alias gitssh-off="eval '$(ssh-agent -k)'"
+alias gitssh-off='eval "$(ssh-agent -k)"'
