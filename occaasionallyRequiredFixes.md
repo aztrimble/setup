@@ -17,22 +17,22 @@ How to increase the swap size on an Ubuntu system using a swap file NOT a swap p
       sudo swapon /swapfile
     ```
 
-  ## Fix screen resolution (usually an NVIDIA problem).
-    When the computer doesn't boot the screen resolution peoperly try:
-      - Sometimes all you need to do is fix the screen resolution.
-        1. I'm not sure, but you might only be able to set supported resolutions. To determine the supported resolutions:
-          ```
-            xrandr -q
-          ```
-        2. Then to set a resolution:
-          ```
-            xrandr --size 1600x1200  #or whatever resolution is appropriate.
-          ```
-      - Sometimes you need to try to reload the packages:
-        ```
-          sudo apt update
-          sudo dpkg --configure -a
-          sudo apt upgrade -y
-          sudo apt autoremove
-          sudo reboot
-        ```
+## Fix screen resolution (usually an NVIDIA problem).
+When the computer doesn't boot the screen resolution peoperly try:
+  - Sometimes all you need to do is fix the screen resolution.
+    1. I'm not sure, but you might only be able to set supported resolutions. To determine the supported resolutions:
+      ```
+        xrandr -q
+      ```
+    2. Then to set a resolution:
+      ```
+        xrandr --size 1600x1200  #or whatever resolution is appropriate.
+      ```
+  - Sometimes you need to try to reload the packages:
+    ```
+      sudo apt update
+      sudo dpkg --configure -a
+      sudo apt upgrade -y
+      sudo apt autoremove
+      sudo reboot
+    ```
